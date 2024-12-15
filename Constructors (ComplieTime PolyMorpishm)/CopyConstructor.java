@@ -1,20 +1,23 @@
-//Copy constructor
-class Nconst{
+class CopyCon{
     int a,b;
-    Nconst(int x , int y){
-      a=x;
-      b=y;
+    CopyCon(int x,int y){
+        a=x;
+        b=y;
     }
-    Nconst(Nconst x){
-        a=x.a;
-        b=x.b;
+    CopyCon(CopyCon obj){
+        a=obj.a;
+        b=obj.b;
     }
     void display(){
-        System.out.println("A: "+a+"B: "+b);
+        System.out.println("a : "+a + " b : "+b);
     }
+}
+class Main{
     public static void main(String args[]){
-        Nconst ob = new Nconst(5,6);
-        Nconst ob2 = new Nconst(ob);
+        CopyCon ob = new CopyCon(2,3);
+        CopyCon ob2 = new CopyCon(ob);
+        ob.display();
         ob2.display();
+        
     }
 }
