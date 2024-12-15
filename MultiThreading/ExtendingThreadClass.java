@@ -1,7 +1,6 @@
-class abc extends Runnable
-{
+class abc extends Thread{
     public void run(){
-        //Task 1
+        //task 1
         for(int j=0;j<5;j++){
             System.out.println("Hi  "+j);
         }
